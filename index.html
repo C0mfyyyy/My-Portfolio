@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey Chaw Capilitan — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#hero" class="nav-logo">CC</a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-text" aria-hidden="true">CASEY</div>
+        <div class="hero-content">
+            <p class="hero-tag animate-in">Cybersecurity &amp; Digital Forensics Student</p>
+            <h1 class="hero-title animate-in">
+                <span class="hero-line">Casey Chaw</span>
+                <span class="hero-line hero-line--accent">Capilitan</span>
+            </h1>
+            <p class="hero-desc animate-in">Aspiring Cybersecurity Analyst with hands-on experience in IT infrastructure, web development, and UI/UX design. Building secure digital futures.</p>
+            <div class="hero-actions animate-in">
+                <a href="#projects" class="btn btn--primary">View Projects</a>
+                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll" id="heroScroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-label">01 — About</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title reveal">A bit about<br><em>who I am</em></h2>
+                    <p class="reveal">I'm Casey — a Cybersecurity &amp; Digital Forensics student at Singapore Polytechnic with a strong foundation in IT infrastructure, application development, and UI/UX design. My journey started in Infocom Technology at ITE, where I developed a passion for solving real-world problems through technology.</p>
+                    <p class="reveal">Beyond the screen, I served as <strong>Regimental Sergeant Major</strong> during my secondary school days — an experience that shaped my discipline, leadership, and commitment to excellence. I also competed in basketball, achieving <strong>3rd place in the North Division</strong>, and earned <strong>2nd place in CSS</strong>.</p>
+                    <p class="reveal">I'm driven by the challenge of safeguarding digital systems and thrive in fast-paced environments where attention to detail and continuous learning are key.</p>
+                </div>
+                <div class="about-details reveal">
+                    <div class="about-card">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-year">2025 – 2028</span>
+                                <strong>Diploma in Cybersecurity &amp; Digital Forensics</strong>
+                                <span>Singapore Polytechnic</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2023 – 2025</span>
+                                <strong>Higher Nitec in IT Application Developer</strong>
+                                <span>Institute of Technical Education</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-year">2021 – 2022</span>
+                                <strong>Nitec in Infocom Technology</strong>
+                                <span>Institute of Technical Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h3>Skills</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML / CSS</span>
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">Adobe XD</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Illustrator</span>
+                            <span class="tag">Video Editing</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">IT Infrastructure</span>
+                            <span class="tag">Troubleshooting</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h3>Achievements</h3>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏀</span>
+                                <div>
+                                    <strong>3rd Place — North Division Basketball</strong>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏆</span>
+                                <div>
+                                    <strong>2nd Place — CSS Competition</strong>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">⭐</span>
+                                <div>
+                                    <strong>Regimental Sergeant Major</strong>
+                                    <span>Christ Church Secondary School</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-label">02 — Projects</div>
+            <h2 class="section-title reveal">Featured<br><em>Work</em></h2>
+
+            <!-- Project 1: Telco App -->
+            <div class="project-card reveal" id="project-telco">
+                <div class="project-header">
+                    <div class="project-meta">
+                        <span class="project-number">01</span>
+                        <span class="project-type">UX Design — Mobile App Prototype</span>
+                    </div>
+                    <h3 class="project-title">Telco Mobile App</h3>
+                    <p class="project-subtitle">IT1x15 UX Design in Web Development</p>
+                </div>
+                <div class="project-description">
+                    <p>Designed and prototyped a comprehensive mobile telecommunications application using Adobe XD. The app enables users to view and manage their mobile plans, track data and SMS usage in real-time, explore new bundles, and handle billing — all from an intuitive, user-friendly interface.</p>
+                    <div class="project-role">
+                        <h4>My Role &amp; Process</h4>
+                        <p>As the sole designer, I conducted user research to understand pain points in existing telco apps, created wireframes and user flows, designed high-fidelity UI screens with a vibrant green-themed interface, and built an interactive prototype in Adobe XD with full navigation and micro-interactions.</p>
+                    </div>
+                    <div class="project-results">
+                        <h4>Key Features</h4>
+                        <div class="result-tags">
+                            <span>Onboarding Flow</span>
+                            <span>Real-time Usage Dashboard</span>
+                            <span>Plan Management</span>
+                            <span>Bundle Discovery</span>
+                            <span>Interactive Prototype</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="project-images project-images--mobile">
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/telco-1.png" alt="Telco App - Get Started Screen" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/telco-2.png" alt="Telco App - Sign Up Screen" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/telco-3.png" alt="Telco App - Home Dashboard" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/telco-4.png" alt="Telco App - Plan Details" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: SingInk -->
+            <div class="project-card reveal" id="project-singink">
+                <div class="project-header">
+                    <div class="project-meta">
+                        <span class="project-number">02</span>
+                        <span class="project-type">Full-Stack Web Application</span>
+                    </div>
+                    <h3 class="project-title">SingInk — Inventory Management System</h3>
+                    <p class="project-subtitle">IT1x25 Web Development Project</p>
+                </div>
+                <div class="project-description">
+                    <p>Built a full-stack web application to solve a stationery company's inventory challenges. SingInk provides a comprehensive dashboard with stock level monitoring, 3-month demand forecasting, supplier management, transaction tracking, and a customer-facing e-commerce storefront — all in one unified platform.</p>
+                    <div class="project-role">
+                        <h4>My Role &amp; Process</h4>
+                        <p>Working in a team, I contributed to both the frontend UI design and backend development. I implemented the inventory dashboard with real-time stock health indicators, the forecasting algorithm that predicts whether stock will last 3 months, and the supplier management module. The project uses Flask (Python) for the backend with a responsive frontend.</p>
+                    </div>
+                    <div class="project-results">
+                        <h4>Key Features</h4>
+                        <div class="result-tags">
+                            <span>Stock Forecasting</span>
+                            <span>Dashboard Analytics</span>
+                            <span>Supplier Management</span>
+                            <span>Transaction Tracking</span>
+                            <span>E-Commerce Storefront</span>
+                            <span>Account Management</span>
+                            <span>Shopping Cart</span>
+                            <span>Quick Restock Orders</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <div class="project-images project-images--desktop">
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-1.png" alt="SingInk - Login Page" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-2.png" alt="SingInk - Dashboard" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-3.png" alt="SingInk - Market Trends" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-4.png" alt="SingInk - Transactions" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-5.png" alt="SingInk - Suppliers" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-6.png" alt="SingInk - Account Manager" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-7.png" alt="SingInk - Products Page" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-8.png" alt="SingInk - My Orders" loading="lazy">
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="images/projects/singink-9.png" alt="SingInk - Shopping Cart" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-label">03 — Experience</div>
+            <h2 class="section-title reveal">Work<br><em>Experience</em></h2>
+            <div class="experience-list">
+                <div class="exp-item reveal">
+                    <div class="exp-left">
+                        <span class="exp-period">Apr 2024 — Aug 2024</span>
+                    </div>
+                    <div class="exp-right">
+                        <h3>Social Media Manager</h3>
+                        <span class="exp-company">Fyreflyz</span>
+                        <p>Managed social media accounts across platforms. Created engaging posts, edited promotional videos, wrote captions, and scheduled content to maintain consistent brand presence and audience engagement.</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-left">
+                        <span class="exp-period">Apr 2023 — Present</span>
+                    </div>
+                    <div class="exp-right">
+                        <h3>Student Care Assistant</h3>
+                        <span class="exp-company">Allkin</span>
+                        <p>Supervise and support primary school students with homework and online learning activities. Developed patience, communication skills, and the ability to adapt teaching approaches to different learning needs.</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-left">
+                        <span class="exp-period">Jul 2022 — Nov 2022</span>
+                    </div>
+                    <div class="exp-right">
+                        <h3>Desktop Engineer</h3>
+                        <span class="exp-company">A-Speed Infotech Pte Ltd</span>
+                        <p>Serviced and deployed PCs for SMRT stations, depots, and offices. Led a team during SIM laptop deployments, handled data migration between systems, and provided on-site troubleshooting for hardware and software issues.</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-left">
+                        <span class="exp-period">Nov 2020 — Dec 2020</span>
+                    </div>
+                    <div class="exp-right">
+                        <h3>Parcel Packer</h3>
+                        <span class="exp-company">J&amp;T Express</span>
+                        <p>Processed and packed goods from e-commerce platforms including Shopee and Lazada. Ensured accuracy and efficiency in a high-volume logistics environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-label">04 — Gallery</div>
+            <h2 class="section-title reveal">Through<br><em>My Lens</em></h2>
+            <p class="gallery-desc reveal">A collection of moments captured during my travels and everyday life.</p>
+        </div>
+        <div class="gallery-grid reveal">
+            <div class="gallery-item">
+                <img src="images/photography/photo-1.jpeg" alt="Chongqing cityscape at night" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-5.jpeg" alt="Geometric light installation" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-4.jpeg" alt="Guitar in sunlight" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-3.jpeg" alt="Singapore Airlines at Changi Airport" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-6.jpeg" alt="Cave and river landscape" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-8.jpeg" alt="River and forest landscape" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-7.jpeg" alt="Street scene at dusk" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photography/photo-2.jpeg" alt="Museum exhibition" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-label">05 — Contact</div>
+            <h2 class="section-title reveal">Let's<br><em>Connect</em></h2>
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <p>I'm currently looking for opportunities in cybersecurity and would love to hear from you.</p>
+                    <div class="contact-details">
+                        <a href="mailto:Caseycapilitangt@gmail.com" class="contact-link">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-value">Caseycapilitangt@gmail.com</span>
+                        </a>
+                        <a href="tel:+6581213511" class="contact-link">
+                            <span class="contact-link-label">Phone</span>
+                            <span class="contact-link-value">(+65) 8121 3511</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-name">Casey Chaw Capilitan</span>
+            <span class="footer-copy">&copy; 2026. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
