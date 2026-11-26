@@ -966,6 +966,12 @@ button:not(:disabled), summary {
     line-height: 1.4;
 }
 
+.fact-card .tag-list > span {
+    border-color: rgba(196, 242, 119, 0.28);
+    background: rgba(196, 242, 119, 0.06);
+    color: var(--text);
+}
+
 .tag-list--dark > span {
     border-color: var(--line);
     color: var(--muted);
