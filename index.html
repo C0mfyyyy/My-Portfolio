@@ -3,589 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casey Chaw Capilitan — Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Casey Chaw Capilitan — Cybersecurity and Digital Forensics student building at the intersection of security, AI and thoughtful design.">
+    <meta name="theme-color" content="#0a0d0e">
+    <title>Portfolio 2026 — Casey Chaw Capilitan</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='4'%20fill='%230a0d0e'/%3E%3Ctext%20x='8'%20y='44'%20font-family='Arial'%20font-size='30'%20font-weight='700'%20fill='%23c4f277'%3ECC%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <!-- Cursor Follower -->
-    <div class="cursor-dot" id="cursorDot"></div>
-
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <a href="#hero" class="nav-logo">CC</a>
-        <div class="nav-links">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#ai" class="nav-link">AI</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#gallery" class="nav-link">Gallery</a>
-            <a href="#contact" class="nav-link">Contact</a>
+    <header class="site-header" id="siteHeader">
+        <div class="nav-shell">
+            <a href="#hero" class="brand" aria-label="Casey Chaw Capilitan — home">
+                <span class="brand-mark">CC<span></span></span>
+                <span class="brand-text">Casey Chaw<small>Portfolio / 2026</small></span>
+            </a>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="#about"><span>01</span> About</a>
+                <a href="#ai"><span>02</span> AI Focus</a>
+                <a href="#projects"><span>03</span> Work</a>
+                <a href="#experience"><span>04</span> Experience</a>
+                <a href="#gallery"><span>05</span> Gallery</a>
+            </nav>
+            <a href="#contact" class="nav-cta">Let’s talk <span aria-hidden="true">↗</span></a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span><span></span>
+            </button>
         </div>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
+    </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#about" class="mobile-link">About</a>
-            <a href="#ai" class="mobile-link">AI</a>
-        <a href="#projects" class="mobile-link">Projects</a>
-        <a href="#experience" class="mobile-link">Experience</a>
-        <a href="#gallery" class="mobile-link">Gallery</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+        <nav aria-label="Mobile navigation">
+            <a href="#about"><span>01</span> About</a>
+            <a href="#ai"><span>02</span> AI Focus</a>
+            <a href="#projects"><span>03</span> Work</a>
+            <a href="#experience"><span>04</span> Experience</a>
+            <a href="#gallery"><span>05</span> Gallery</a>
+            <a href="#contact"><span>06</span> Contact</a>
+        </nav>
+        <div class="mobile-menu-foot">
+            <span>Open to opportunities</span>
+            <a href="mailto:Caseycapilitangt@gmail.com">Caseycapilitangt@gmail.com</a>
+        </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-text" aria-hidden="true">CASEY</div>
-        <div class="hero-content">
-            <p class="hero-tag animate-in">Cybersecurity &amp; Digital Forensics · AI Integration</p>
-            <h1 class="hero-title animate-in">
-                <span class="hero-line">Casey Chaw</span>
-                <span class="hero-line hero-line--accent">Capilitan</span>
-            </h1>
-            <p class="hero-desc animate-in">Aspiring DFIR analyst who builds with AI. I'm learning to integrate AI into everything I do, from study tools and trading systems to security workflows, and to do it securely and responsibly.</p>
-            <div class="hero-actions animate-in">
-                <a href="#projects" class="btn btn--primary">View Projects</a>
-                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+    <main id="main">
+        <section class="hero" id="hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow hero-enter"><span class="status-dot"></span> Cybersecurity &amp; Digital Forensics <span class="eyebrow-divider">/</span> AI Integration</p>
+                    <h1 class="hero-enter">Casey Chaw<br><span>Capilitan<span class="accent-dot">.</span></span></h1>
+                    <p class="hero-statement hero-enter">I’m learning to build <strong>safer, smarter systems</strong> — where security thinking meets practical AI.</p>
+                    <div class="hero-actions hero-enter">
+                        <a href="#projects" class="button button--primary">Explore my work <span aria-hidden="true">↘</span></a>
+                        <a href="https://github.com/C0mfyyy" target="_blank" rel="noopener noreferrer" class="button button--ghost">GitHub <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="hero-meta hero-enter">
+                        <div><span>Current focus</span><strong>AI-assisted security</strong></div>
+                        <div><span>Studying</span><strong>Nanyang Polytechnic</strong></div>
+                        <div><span>Mindset</span><strong>Learn. Build. Test.</strong></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual hero-enter">
+                    <div class="hero-image-frame">
+                        <img src="images/photography/photo-5.jpeg" alt="Geometric light installation with reflected white lines" fetchpriority="high">
+                        <div class="image-topline"><span>FIELD NOTES / 001</span><span class="crosshair" aria-hidden="true">+</span></div>
+                        <div class="image-gradient" aria-hidden="true"></div>
+                        <div class="image-caption">
+                            <span>Behind the screen</span>
+                            <p>Designer. Photographer.<br>Curious human.</p>
+                        </div>
+                    </div>
+                    <div class="hero-float-card">
+                        <span class="float-card-label"><i></i> Currently exploring</span>
+                        <strong>Threat hunting<br>with agentic AI</strong>
+                        <span class="float-card-foot">HUMAN-LED / AI-ASSISTED</span>
+                    </div>
+                    <span class="visual-coordinate" aria-hidden="true">01°17′N / 103°51′E</span>
+                </div>
+            </div>
+            <div class="container hero-foot">
+                <a href="#about" class="scroll-cue"><span class="scroll-line" aria-hidden="true"></span> Scroll to discover</a>
+                <p>SECURITY <span>·</span> AI <span>·</span> DESIGN <span>·</span> PHOTOGRAPHY</p>
+            </div>
+        </section>
+
+        <div class="discipline-strip" aria-label="Core disciplines">
+            <div class="discipline-track">
+                <span>Digital Forensics</span><i aria-hidden="true">✳</i>
+                <span>Python</span><i aria-hidden="true">✳</i>
+                <span>LLM APIs</span><i aria-hidden="true">✳</i>
+                <span>Threat Hunting</span><i aria-hidden="true">✳</i>
+                <span>UI / UX</span><i aria-hidden="true">✳</i>
+                <span>Responsible AI</span><i aria-hidden="true">✳</i>
             </div>
         </div>
-        <div class="hero-scroll" id="heroScroll">
-            <span>Scroll</span>
-            <div class="hero-scroll-line"></div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="section-label">01 — About</div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2 class="section-title reveal">A bit about<br><em>who I am</em></h2>
-                    <p class="reveal">I'm Casey — a Cybersecurity &amp; Digital Forensics student at Nanyang Polytechnic with a strong foundation in IT infrastructure, application development, and UI/UX design. My journey started in Infocom Technology at ITE, where I developed a passion for solving real-world problems through technology.</p>
-                    <p class="reveal">Beyond the screen, I served as <strong>Regimental Sergeant Major</strong> during my secondary school days — an experience that shaped my discipline, leadership, and commitment to excellence. I also competed in basketball, achieving <strong>3rd place in the North Division</strong>.</p>
-                    <p class="reveal">Right now my focus is <strong>AI integration</strong>: learning how to wire AI models into real systems through APIs, automation and agent workflows, and applying that to the things I care about, from threat hunting to markets.</p>
-                    <p class="reveal">I'm driven by the challenge of safeguarding digital systems and thrive in fast-paced environments where attention to detail and continuous learning are key.</p>
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label reveal"><span>01</span> Profile</p>
+                    <h2 class="section-title reveal">A builder with a<br><em>security mindset.</em></h2>
+                    <p class="section-intro reveal">Technology is more than code to me. It’s a way to solve real problems, ask better questions and make things work for people.</p>
                 </div>
-                <div class="about-details reveal">
-                    <div class="about-card">
-                        <h3>Education</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-year">2025 – 2028</span>
-                                <strong>Diploma in Cybersecurity &amp; Digital Forensics</strong>
-                                <span>Nanyang Polytechnic</span>
+                <div class="about-layout">
+                    <div class="about-story reveal">
+                        <p class="about-lead">I’m Casey, a Cybersecurity &amp; Digital Forensics student at Nanyang Polytechnic with foundations in IT infrastructure, application development and UI/UX design.</p>
+                        <p>My journey started in Infocom Technology at ITE, where I discovered a passion for turning ideas into useful digital experiences. Today, I’m especially interested in how AI can support security work — from faster threat hunting to more thoughtful incident response.</p>
+                        <p>I bring the same care to technical and people-focused work. As Regimental Sergeant Major, I learned discipline and leadership. On the basketball court, I learned how to perform under pressure. In every project, I try to bring both.</p>
+                        <div class="about-signature"><span>Casey Chaw Capilitan</span><small>Student / Builder / Continuous learner</small></div>
+                    </div>
+                    <div class="about-facts reveal">
+                        <article class="fact-card">
+                            <div class="fact-card-head"><h3>Education</h3><span>03</span></div>
+                            <div class="education-list">
+                                <div><span>2025 — 2028</span><strong>Diploma in Cybersecurity &amp; Digital Forensics</strong><small>Nanyang Polytechnic</small></div>
+                                <div><span>2023 — 2025</span><strong>Higher Nitec in IT Application Developer</strong><small>Institute of Technical Education</small></div>
+                                <div><span>2021 — 2022</span><strong>Nitec in Infocom Technology</strong><small>Institute of Technical Education</small></div>
                             </div>
-                            <div class="timeline-item">
-                                <span class="timeline-year">2023 – 2025</span>
-                                <strong>Higher Nitec in IT Application Developer</strong>
-                                <span>Institute of Technical Education</span>
+                        </article>
+                        <article class="fact-card">
+                            <div class="fact-card-head"><h3>Toolkit</h3><span>18</span></div>
+                            <div class="tag-list">
+                                <span>Python</span><span>JavaScript</span><span>HTML / CSS</span><span>UI/UX</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span><span>Video Editing</span><span>VS Code</span><span>Networking</span><span>IT Infrastructure</span><span>Troubleshooting</span><span>AI Integration</span><span>Prompt Engineering</span><span>LLM APIs</span><span>Backtesting</span><span>MQL5</span><span>Threat Hunting</span>
                             </div>
-                            <div class="timeline-item">
-                                <span class="timeline-year">2021 – 2022</span>
-                                <strong>Nitec in Infocom Technology</strong>
-                                <span>Institute of Technical Education</span>
-                            </div>
+                        </article>
+                        <div class="achievement-grid">
+                            <article><strong>03</strong><span>3rd place<br>North Division Basketball</span></article>
+                            <article><strong>RSM</strong><span>Regimental Sergeant Major<br>Christ Church Secondary School</span></article>
                         </div>
                     </div>
-                    <div class="about-card">
-                        <h3>Skills</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML / CSS</span>
-                            <span class="tag">UI/UX Design</span>
-                            <span class="tag">Adobe XD</span>
-                            <span class="tag">Photoshop</span>
-                            <span class="tag">Illustrator</span>
-                            <span class="tag">Video Editing</span>
-                            <span class="tag">VS Code</span>
-                            <span class="tag">Networking</span>
-                            <span class="tag">IT Infrastructure</span>
-                            <span class="tag">Troubleshooting</span>
-                            <span class="tag">AI Integration</span>
-                            <span class="tag">Prompt Engineering</span>
-                            <span class="tag">LLM APIs</span>
-                            <span class="tag">Backtesting</span>
-                            <span class="tag">MQL5</span>
-                            <span class="tag">Threat Hunting</span>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ai-focus" id="ai">
+            <div class="container">
+                <div class="section-heading section-heading--light">
+                    <p class="section-label reveal"><span>02</span> AI Focus</p>
+                    <h2 class="section-title reveal">AI is a tool.<br><em>Judgment stays human.</em></h2>
+                    <p class="section-intro reveal">I’m not just using AI tools — I’m learning to connect models to data, automate useful workflows and put responsible guardrails around them.</p>
+                </div>
+                <div class="ai-grid">
+                    <article class="ai-card reveal">
+                        <div class="ai-card-top"><span>01 / LEARN</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 7.5h8l3 3h11v15H5z"/><path d="M5 7.5V25M13 10.5v15"/></svg></div>
+                        <h3>AI in how I learn</h3>
+                        <p>Turning module slides into reviewed summaries, flashcards and practice checks. Revision Desk grew directly from this workflow.</p>
+                    </article>
+                    <article class="ai-card reveal">
+                        <div class="ai-card-top"><span>02 / BUILD</span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="8" height="8" rx="1"/><rect x="19" y="19" width="8" height="8" rx="1"/><path d="M13 9h7a3 3 0 0 1 3 3v7M9 13v7a3 3 0 0 0 3 3h7"/></svg></div>
+                        <h3>AI in systems</h3>
+                        <p>Wiring models into real software through APIs, automation and multi-agent workflows where every step has a clear job.</p>
+                    </article>
+                    <article class="ai-card reveal">
+                        <div class="ai-card-top"><span>03 / SECURE</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 27 7v8c0 7-4.5 11.5-11 14C9.5 26.5 5 22 5 15V7z"/><path d="m11 16 3 3 7-8"/></svg></div>
+                        <h3>AI in security</h3>
+                        <p>Exploring AI-assisted threat hunting and incident response, including a proposal for a locally hosted purple-team assistant for SMEs.</p>
+                    </article>
+                    <article class="ai-card reveal">
+                        <div class="ai-card-top"><span>04 / GOVERN</span><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 10v7l5 3M16 5v3M16 24v3M5 16h3M24 16h3"/></svg></div>
+                        <h3>AI, responsibly</h3>
+                        <p>Studying fairness, transparency, security and human oversight so the systems I build keep people in control.</p>
+                    </article>
+                </div>
+                <div class="learning-row reveal">
+                    <span>Currently learning</span>
+                    <div><span>LLM APIs &amp; tool calling</span><span>Multi-agent workflows</span><span>Strategy backtesting</span><span>AI-assisted threat hunting</span><span>Responsible AI</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-heading projects-heading">
+                    <div>
+                        <p class="section-label reveal"><span>03</span> Selected Work</p>
+                        <h2 class="section-title reveal">Built to solve.<br><em>Designed to matter.</em></h2>
                     </div>
-                    <div class="about-card">
-                        <h3>Achievements</h3>
-                        <div class="achievements">
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🏀</span>
-                                <div>
-                                    <strong>3rd Place — North Division Basketball</strong>
+                    <p class="section-intro reveal">A mix of current experiments and completed projects across AI, security, web development and design.</p>
+                </div>
+                <div class="project-toolbar reveal">
+                    <div class="project-filters" role="group" aria-label="Filter projects">
+                        <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+                        <button type="button" class="filter-button" data-filter="ai" aria-pressed="false">AI &amp; Security <span>02</span></button>
+                        <button type="button" class="filter-button" data-filter="web" aria-pressed="false">Web <span>03</span></button>
+                        <button type="button" class="filter-button" data-filter="design" aria-pressed="false">Design <span>01</span></button>
+                    </div>
+                    <span class="project-count" id="projectCount" aria-live="polite">Showing 5 projects</span>
+                </div>
+
+                <div class="project-list">
+                    <article class="project-card project-card--featured reveal" id="project-trading-bot" data-category="ai">
+                        <div class="project-card-top">
+                            <div><span class="project-index">01</span><span class="project-kind">AI-assisted trading system</span></div>
+                            <span class="status-badge"><i></i> In progress</span>
+                        </div>
+                        <div class="featured-layout">
+                            <div class="project-copy">
+                                <h3>Algorithmic<br>Trading Bot</h3>
+                                <p class="project-summary">A team of five rule-based day-trading bots built around fixed decisions, disciplined risk and out-of-sample testing — not market emotion.</p>
+                                <ul class="project-points">
+                                    <li><span>01</span> Strategies tuned on 2005–2012 data, then tested on unseen years.</li>
+                                    <li><span>02</span> Trading costs included, with every position closed before the 16:00 NY close.</li>
+                                    <li><span>03</span> A 3D replay floor and a separate multi-agent XAUUSD simulation.</li>
+                                </ul>
+                                <div class="tag-list tag-list--dark"><span>Python</span><span>Backtesting</span><span>Three.js</span><span>Multi-agent AI</span><span>MQL5</span></div>
+                                <div class="project-links">
+                                    <a href="https://claude.ai/artifact/EsEW5fEy2icS1U1hpaPQ9a" target="_blank" rel="noopener noreferrer" class="text-link">View the bots <span aria-hidden="true">↗</span></a>
+                                    <a href="https://claude.ai/artifact/JhVFUXnXh4AJ9BFcTBpDTe" target="_blank" rel="noopener noreferrer" class="text-link">XAUUSD simulation <span aria-hidden="true">↗</span></a>
                                 </div>
                             </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">⭐</span>
-                                <div>
-                                    <strong>Regimental Sergeant Major</strong>
-                                    <span>Christ Church Secondary School</span>
+                            <div class="trading-visual" aria-hidden="true">
+                                <div class="visual-window-bar"><span><i></i><i></i><i></i></span><small>bot_team.replay</small><span>NY / 09:30—16:00</span></div>
+                                <div class="chart-label"><span>SESSION REPLAY</span><strong>5 BOTS / 1 SYSTEM</strong></div>
+                                <svg viewBox="0 0 480 235" preserveAspectRatio="none">
+                                    <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4f277" stop-opacity=".25"/><stop offset="1" stop-color="#c4f277" stop-opacity="0"/></linearGradient></defs>
+                                    <g class="chart-grid"><line x1="0" y1="45" x2="480" y2="45"/><line x1="0" y1="95" x2="480" y2="95"/><line x1="0" y1="145" x2="480" y2="145"/><line x1="0" y1="195" x2="480" y2="195"/></g>
+                                    <path class="chart-area" d="M0 196L34 182L70 188L106 158L142 166L178 132L214 143L250 105L286 117L322 82L358 94L394 57L430 66L480 29V235H0Z" fill="url(#chartFill)"/>
+                                    <path class="chart-line" d="M0 196L34 182L70 188L106 158L142 166L178 132L214 143L250 105L286 117L322 82L358 94L394 57L430 66L480 29"/>
+                                    <circle cx="106" cy="158" r="5" class="buy-point"/><circle cx="214" cy="143" r="5" class="sell-point"/><circle cx="322" cy="82" r="5" class="buy-point"/><circle cx="430" cy="66" r="5" class="sell-point"/>
+                                </svg>
+                                <div class="bot-row"><span><i style="--bot:#c4f277"></i>Bot 01</span><span><i style="--bot:#66d9cf"></i>Bot 02</span><span><i style="--bot:#f2b66d"></i>Bot 03</span><span><i style="--bot:#b6a0f2"></i>Bot 04</span><span><i style="--bot:#f28383"></i>Bot 05</span></div>
+                                <p>Illustration only — not real trading results.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--featured project-card--reverse reveal" id="project-revision-desk" data-category="ai web">
+                        <div class="project-card-top">
+                            <div><span class="project-index">02</span><span class="project-kind">AI-powered study app</span></div>
+                            <span class="status-badge status-badge--live"><i></i> Live</span>
+                        </div>
+                        <div class="featured-layout">
+                            <div class="project-copy">
+                                <h3>Revision<br>Desk</h3>
+                                <p class="project-summary">A personal study workspace that turns lecture slides into structured lessons, flashcards and practice checks — with AI-generated material reviewed before it goes live.</p>
+                                <ul class="project-points">
+                                    <li><span>01</span> Module-to-test organisation with a readiness dashboard.</li>
+                                    <li><span>02</span> Tap-to-reveal concepts, flashcards and explained practice answers.</li>
+                                    <li><span>03</span> A responsive light and dark interface built for daily revision.</li>
+                                </ul>
+                                <div class="tag-list tag-list--dark"><span>JavaScript</span><span>AI-assisted content</span><span>UI/UX</span><span>Study tools</span></div>
+                                <div class="project-links">
+                                    <a href="https://claude.ai/artifact/WK2WzhrX4YzB4huR9NnZo9" target="_blank" rel="noopener noreferrer" class="text-link">Open Revision Desk <span aria-hidden="true">↗</span></a>
+                                    <a href="https://github.com/C0mfyyy/revision-desk" target="_blank" rel="noopener noreferrer" class="text-link">View source <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                            <div class="study-visual" aria-hidden="true">
+                                <div class="study-sidebar"><span class="study-logo">RD</span><i class="is-active"></i><i></i><i></i><i></i><small>v.01</small></div>
+                                <div class="study-content">
+                                    <div class="study-top"><span>Good afternoon, Casey</span><span class="study-avatar">CC</span></div>
+                                    <h4>Your revision,<br>in focus.</h4>
+                                    <div class="readiness-card"><div class="readiness-ring"><span>72<small>%</small></span></div><div><small>NEXT TEST</small><strong>Responsible AI</strong><span>You’re getting there.</span><div class="mini-progress"><i></i></div></div></div>
+                                    <div class="flashcard"><small>FLASHCARD / 04</small><p>Which principle keeps humans in control of consequential decisions?</p><span>Tap to reveal <b>↗</b></span></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- AI Focus Section -->
-    <section class="section ai-focus" id="ai">
-        <div class="container">
-            <div class="section-label">02 — AI Focus</div>
-            <div class="ai-intro">
-                <h2 class="section-title reveal">Putting AI into<br><em>everything I build</em></h2>
-                <p class="ai-lead reveal">I'm not just using AI tools, I'm learning how to build them into systems: connecting models to data, giving them tasks to run end to end, and putting guardrails around them. Every project below is part of that practice.</p>
-            </div>
-
-            <div class="ai-grid">
-                <article class="ai-card reveal">
-                    <span class="ai-card-num">A</span>
-                    <h3>AI in how I learn</h3>
-                    <p>I turn module slides into interactive study tools: lesson summaries, flashcards and practice checks generated with AI and then reviewed by me. Revision Desk came out of this.</p>
-                </article>
-                <article class="ai-card reveal">
-                    <span class="ai-card-num">B</span>
-                    <h3>AI in systems</h3>
-                    <p>Wiring models into real software through APIs, automation pipelines and multi-agent workflows, where each agent has one job and its output feeds the next step.</p>
-                </article>
-                <article class="ai-card reveal">
-                    <span class="ai-card-num">C</span>
-                    <h3>AI in security</h3>
-                    <p>Exploring how AI can speed up threat hunting and incident response, including a project proposal for a locally hosted purple-team AI assistant for SMEs.</p>
-                </article>
-                <article class="ai-card reveal">
-                    <span class="ai-card-num">D</span>
-                    <h3>AI, responsibly</h3>
-                    <p>Studying Responsible AI alongside the build work: fairness, transparency, human oversight and security, so what I ship keeps a human in control.</p>
-                </article>
-            </div>
-
-            <div class="ai-learning reveal">
-                <h4>Currently learning</h4>
-                <div class="result-tags">
-                    <span>LLM APIs &amp; tool calling</span>
-                    <span>Multi-agent workflows</span>
-                    <span>Prompt engineering</span>
-                    <span>Strategy backtesting</span>
-                    <span>AI-assisted threat hunting</span>
-                    <span>Responsible AI governance</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="section-label">03 — Projects</div>
-            <h2 class="section-title reveal">Featured<br><em>Work</em></h2>
-
-            <!-- Project: Trading Bot (in progress) -->
-            <div class="project-card project-card--live reveal" id="project-trading-bot">
-                <div class="project-header">
-                    <div class="project-meta">
-                        <span class="project-number">01</span>
-                        <span class="project-type">AI-Assisted Trading System</span>
-                        <span class="status-badge"><i></i>In progress</span>
-                    </div>
-                    <h3 class="project-title">Algorithmic Trading Bot</h3>
-                    <p class="project-subtitle">Personal project — current build</p>
-                </div>
-                <div class="project-split">
-                    <div class="project-description">
-                        <p>I'm building a trading bot that follows fixed rules instead of emotions. The current version is a team of five rule-based day-trading bots for US stock indices: each one watches the market from the 09:30 open, trades only when its rules fire, and closes every position before the 16:00 close, so nothing is held overnight.</p>
-                        <div class="project-role">
-                            <h4>How I'm testing it</h4>
-                            <p>The strategies were tuned on 2005–2012 data, then tested on years they had never seen, with trading costs taken off every trade. A strategy only passed if it stayed profitable on the unseen years and survived doubled costs. Results replay on a 3D "trading floor" where you can watch each bot trade day by day.</p>
-                        </div>
-                        <div class="project-role">
-                            <h4>Where it's heading</h4>
-                            <p>Alongside it I'm simulating a multi-agent engine for gold (XAUUSD), where separate AI agents handle signals, risk and execution, and an MQL5 Expert Advisor for MetaTrader 5. The goal is to learn the full pipeline, from idea to backtest to live paper trading.</p>
-                        </div>
-                        <div class="project-results">
-                            <h4>Key Features</h4>
-                            <div class="result-tags">
-                                <span>5 Rule-Based Bots</span>
-                                <span>Out-of-Sample Testing</span>
-                                <span>Costs Included</span>
-                                <span>No Overnight Risk</span>
-                                <span>3D Replay (Three.js)</span>
-                                <span>Multi-Agent Engine</span>
-                                <span>MQL5 Expert Advisor</span>
+                    <div class="compact-grid">
+                    <article class="project-card project-card--compact reveal" id="project-telco" data-category="design">
+                        <div class="project-card-top"><div><span class="project-index">03</span><span class="project-kind">UX design / mobile</span></div><span class="compact-arrow" aria-hidden="true">↘</span></div>
+                        <h3>Telco Mobile App</h3>
+                        <p>A user-centred mobile app prototype for managing plans, tracking data and SMS usage, discovering bundles and handling billing.</p>
+                        <div class="tag-list tag-list--dark"><span>Adobe XD</span><span>User research</span><span>Prototyping</span></div>
+                        <details class="case-details">
+                            <summary>View case study &amp; demo <span aria-hidden="true">+</span></summary>
+                            <div class="case-content">
+                                <p>As the sole designer, I researched pain points in existing telco apps, mapped user flows, created wireframes and designed a vibrant green high-fidelity interface with an interactive Adobe XD prototype.</p>
+                                <ul><li>Onboarding and plan management</li><li>Real-time usage dashboard</li><li>Bundle discovery and billing</li><li>Full navigation and micro-interactions</li></ul>
+                                <div class="video-wrapper"><iframe data-src="https://www.youtube.com/embed/JINT3LjMxwc" title="Telco App — full walkthrough demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                             </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://claude.ai/artifact/EsEW5fEy2icS1U1hpaPQ9a" target="_blank" rel="noopener" class="btn btn--primary">View the Bots</a>
-                            <a href="https://claude.ai/artifact/JhVFUXnXh4AJ9BFcTBpDTe" target="_blank" rel="noopener" class="btn btn--outline">XAUUSD Engine Sim</a>
-                        </div>
-                    </div>
-                    <div class="project-visual project-visual--chart" aria-hidden="true">
-                        <div class="pv-head">
-                            <span class="pv-dot pv-dot--live"></span>
-                            <span>bot_team.replay</span>
-                            <span class="pv-mkt">09:30 → 16:00 NY</span>
-                        </div>
-                        <svg viewBox="0 0 320 170" class="pv-chart" preserveAspectRatio="none">
-                            <defs>
-                                <linearGradient id="pvFill" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
-                                    <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
-                                </linearGradient>
-                            </defs>
-                            <g class="pv-grid">
-                                <line x1="0" y1="42" x2="320" y2="42"/><line x1="0" y1="85" x2="320" y2="85"/><line x1="0" y1="128" x2="320" y2="128"/>
-                            </g>
-                            <path class="pv-area" d="M0,140 L25,132 L50,136 L75,120 L100,124 L125,104 L150,110 L175,92 L200,96 L225,74 L250,80 L275,58 L300,50 L320,40 L320,170 L0,170 Z" fill="url(#pvFill)"/>
-                            <path class="pv-line" d="M0,140 L25,132 L50,136 L75,120 L100,124 L125,104 L150,110 L175,92 L200,96 L225,74 L250,80 L275,58 L300,50 L320,40"/>
-                            <circle cx="75" cy="120" r="4" class="pv-buy"/><circle cx="125" cy="104" r="4" class="pv-sell"/>
-                            <circle cx="225" cy="74" r="4" class="pv-buy"/><circle cx="275" cy="58" r="4" class="pv-sell"/>
-                        </svg>
-                        <div class="pv-bots">
-                            <span><i style="background:#22d3ee"></i>Bot 1</span>
-                            <span><i style="background:#34d399"></i>Bot 2</span>
-                            <span><i style="background:#fbbf24"></i>Bot 3</span>
-                            <span><i style="background:#a78bfa"></i>Bot 4</span>
-                            <span><i style="background:#f87171"></i>Bot 5</span>
-                        </div>
-                        <p class="pv-caption">Illustration only, not real results</p>
-                    </div>
-                </div>
-            </div>
+                        </details>
+                    </article>
 
-            <!-- Project: Revision Desk -->
-            <div class="project-card reveal" id="project-revision-desk">
-                <div class="project-header">
-                    <div class="project-meta">
-                        <span class="project-number">02</span>
-                        <span class="project-type">AI-Powered Study App</span>
-                        <span class="status-badge status-badge--shipped"><i></i>Live</span>
-                    </div>
-                    <h3 class="project-title">Revision Desk</h3>
-                    <p class="project-subtitle">Personal project — built for my own diploma modules</p>
-                </div>
-                <div class="project-split">
-                    <div class="project-description">
-                        <p>Revision Desk is the study app I built to revise for my own modules. It turns lecture slides into short lessons, tap-to-reveal concept cards, flashcards and quick multiple-choice checks, all organised by module and test, with a dashboard that shows how ready I am for each upcoming test.</p>
-                        <div class="project-role">
-                            <h4>How AI fits in</h4>
-                            <p>I use AI to pull the key points, flashcards and practice questions out of my slides, then review and correct them before they go into the app. Each wrong answer comes with an explanation, so the quiz teaches as well as tests. It currently covers modules like IT Governance and Responsible AI.</p>
-                        </div>
-                        <div class="project-role">
-                            <h4>What's next</h4>
-                            <p>Turning it into a standalone web app with sign-in and per-user data, and possibly releasing it on the Play Store and App Store later.</p>
-                        </div>
-                        <div class="project-results">
-                            <h4>Key Features</h4>
-                            <div class="result-tags">
-                                <span>Module → Test Tree</span>
-                                <span>Readiness Dashboard</span>
-                                <span>Lesson Summaries</span>
-                                <span>Flashcards</span>
-                                <span>Practice Checks</span>
-                                <span>Light / Dark Mode</span>
-                                <span>Mobile Friendly</span>
+                    <article class="project-card project-card--compact reveal" id="project-singink" data-category="web">
+                        <div class="project-card-top"><div><span class="project-index">04</span><span class="project-kind">Full-stack web app</span></div><span class="compact-arrow" aria-hidden="true">↘</span></div>
+                        <h3>SingInk Inventory</h3>
+                        <p>A unified inventory and e-commerce platform for a stationery company, featuring stock forecasting, supplier management and transaction tracking.</p>
+                        <div class="tag-list tag-list--dark"><span>Flask</span><span>Python</span><span>Forecasting</span><span>Team project</span></div>
+                        <details class="case-details">
+                            <summary>View case study &amp; demo <span aria-hidden="true">+</span></summary>
+                            <div class="case-content">
+                                <p>Working in a team, I contributed to frontend UI design and backend development. I implemented the inventory dashboard, three-month stock forecasting and supplier management module using Flask and a responsive frontend.</p>
+                                <ul><li>Stock health dashboard and analytics</li><li>Supplier and transaction management</li><li>Customer storefront and shopping cart</li><li>Accounts and quick restock orders</li></ul>
+                                <div class="video-wrapper"><iframe data-src="https://www.youtube.com/embed/efKh3RIxCxw" title="SingInk — inventory management system demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                             </div>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://claude.ai/artifact/WK2WzhrX4YzB4huR9NnZo9" target="_blank" rel="noopener" class="btn btn--primary">Open Revision Desk</a>
-                            <a href="https://github.com/C0mfyyy/revision-desk" target="_blank" rel="noopener" class="btn btn--outline">GitHub Repo</a>
-                        </div>
-                    </div>
-                    <div class="project-visual project-visual--study" aria-hidden="true">
-                        <div class="pv-head">
-                            <span class="pv-dot"></span>
-                            <span>revision-desk</span>
-                        </div>
-                        <div class="rd-mock">
-                            <div class="rd-ring"><span>Ready</span></div>
-                            <div class="rd-lines">
-                                <div class="rd-label">Next test</div>
-                                <div class="rd-title">Responsible AI</div>
-                                <div class="rd-bar"><i style="width:72%"></i></div>
-                                <div class="rd-bar rd-bar--b"><i style="width:48%"></i></div>
+                        </details>
+                    </article>
+
+                    <article class="project-card project-card--compact reveal" id="project-cca" data-category="web">
+                        <div class="project-card-top"><div><span class="project-index">05</span><span class="project-kind">Web application</span></div><span class="compact-arrow" aria-hidden="true">↘</span></div>
+                        <h3>CCA Concert Booking</h3>
+                        <p>A club platform with event discovery, interactive seat selection and automated confirmation emails for completed concert bookings.</p>
+                        <div class="tag-list tag-list--dark"><span>JavaScript</span><span>Email API</span><span>Authentication</span></div>
+                        <details class="case-details">
+                            <summary>View case study &amp; demo <span aria-hidden="true">+</span></summary>
+                            <div class="case-content">
+                                <p>I designed the booking interface and integrated a third-party email service, building the journey from event selection to payment confirmation and a formatted confirmation message with seat and event details.</p>
+                                <ul><li>Event browsing and seat selection</li><li>Booking confirmation workflow</li><li>Third-party email API integration</li><li>Authentication and booking history</li></ul>
+                                <div class="video-wrapper"><iframe data-src="https://www.youtube.com/embed/DTfNiVIk__U" title="CCA Club — booking and email generation demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                             </div>
-                        </div>
-                        <div class="rd-flash">
-                            <span class="rd-flash-q">Flashcard</span>
-                            <p>Which Responsible AI principle keeps humans in control of consequential decisions?</p>
-                            <span class="rd-flash-a">Tap to reveal</span>
-                        </div>
+                        </details>
+                    </article>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section class="section experience" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label reveal"><span>04</span> Experience</p>
+                    <h2 class="section-title reveal">Different roles.<br><em>The same care.</em></h2>
+                    <p class="section-intro reveal">Experience across technology, education, communication and logistics has made me adaptable, practical and comfortable learning fast.</p>
+                </div>
+                <div class="experience-list">
+                    <article class="experience-item reveal"><div class="experience-date">Apr 2024 — Aug 2024</div><div><h3>Social Media Manager</h3><span>Fyreflyz</span><p>Created engaging posts, edited promotional videos, wrote captions and scheduled content to maintain a consistent brand presence.</p></div><span class="experience-number" aria-hidden="true">01</span></article>
+                    <article class="experience-item reveal"><div class="experience-date">Apr 2023 — Present</div><div><h3>Student Care Assistant</h3><span>Allkin</span><p>Supported primary school students with homework and online learning, adapting teaching approaches to different needs with patience and clear communication.</p></div><span class="experience-number" aria-hidden="true">02</span></article>
+                    <article class="experience-item reveal"><div class="experience-date">Jul 2022 — Nov 2022</div><div><h3>Desktop Engineer</h3><span>A-Speed Infotech Pte Ltd</span><p>Serviced and deployed PCs for SMRT stations, depots and offices, led SIM laptop deployments, migrated data and troubleshot hardware and software issues on-site.</p></div><span class="experience-number" aria-hidden="true">03</span></article>
+                    <article class="experience-item reveal"><div class="experience-date">Nov 2020 — Dec 2020</div><div><h3>Parcel Packer</h3><span>J&amp;T Express</span><p>Processed and packed e-commerce orders from platforms including Shopee and Lazada with accuracy in a high-volume logistics environment.</p></div><span class="experience-number" aria-hidden="true">04</span></article>
+                </div>
+            </div>
+        </section>
 
-            <!-- Project 1: Telco App -->
-            <div class="project-card reveal" id="project-telco">
-                <div class="project-header">
-                    <div class="project-meta">
-                        <span class="project-number">03</span>
-                        <span class="project-type">UX Design — Mobile App Prototype</span>
-                    </div>
-                    <h3 class="project-title">Telco Mobile App</h3>
-                    <p class="project-subtitle">IT1x15 UX Design in Web Development</p>
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="gallery-heading">
+                    <div><p class="section-label reveal"><span>05</span> Through My Lens</p><h2 class="section-title reveal">A little curiosity,<br><em>captured.</em></h2></div>
+                    <p class="section-intro reveal">Moments from travel and everyday life. A reminder that the best work often starts outside the screen.</p>
                 </div>
-                <div class="project-description">
-                    <p>Designed and prototyped a comprehensive mobile telecommunications application using Adobe XD. The app enables users to view and manage their mobile plans, track data and SMS usage in real-time, explore new bundles, and handle billing — all from an intuitive, user-friendly interface.</p>
-                    <div class="project-role">
-                        <h4>My Role &amp; Process</h4>
-                        <p>As the sole designer, I conducted user research to understand pain points in existing telco apps, created wireframes and user flows, designed high-fidelity UI screens with a vibrant green-themed interface, and built an interactive prototype in Adobe XD with full navigation and micro-interactions.</p>
-                    </div>
-                    <div class="project-results">
-                        <h4>Key Features</h4>
-                        <div class="result-tags">
-                            <span>Onboarding Flow</span>
-                            <span>Real-time Usage Dashboard</span>
-                            <span>Plan Management</span>
-                            <span>Bundle Discovery</span>
-                            <span>Interactive Prototype</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-gallery">
-                    <div class="project-videos">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/JINT3LjMxwc" title="Telco App — Full Walkthrough Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                <div class="gallery-grid reveal">
+                    <button type="button" class="gallery-item gallery-item--wide" data-caption="Chongqing after dark / 01"><img src="images/photography/photo-1.jpeg" alt="Chongqing cityscape and red bridge at night" loading="lazy"><span>Chongqing after dark <small>01 / 08</small></span></button>
+                    <button type="button" class="gallery-item gallery-item--tall" data-caption="Lines of light / 02"><img src="images/photography/photo-5.jpeg" alt="Geometric white light installation" loading="lazy"><span>Lines of light <small>02 / 08</small></span></button>
+                    <button type="button" class="gallery-item" data-caption="Morning, in sunlight / 03"><img src="images/photography/photo-4.jpeg" alt="Guitar resting in a sunlit room" loading="lazy"><span>Morning, in sunlight <small>03 / 08</small></span></button>
+                    <button type="button" class="gallery-item" data-caption="Ready for departure / 04"><img src="images/photography/photo-3.jpeg" alt="Singapore Airlines aircraft at Changi Airport" loading="lazy"><span>Ready for departure <small>04 / 08</small></span></button>
+                    <button type="button" class="gallery-item gallery-item--wide" data-caption="Between earth and water / 05"><img src="images/photography/photo-6.jpeg" alt="Cave and river landscape" loading="lazy"><span>Between earth and water <small>05 / 08</small></span></button>
+                    <button type="button" class="gallery-item gallery-item--tall" data-caption="Into the green / 06"><img src="images/photography/photo-8.jpeg" alt="River winding through a forest landscape" loading="lazy"><span>Into the green <small>06 / 08</small></span></button>
+                    <button type="button" class="gallery-item" data-caption="City at dusk / 07"><img src="images/photography/photo-7.jpeg" alt="Street scene at dusk" loading="lazy"><span>City at dusk <small>07 / 08</small></span></button>
+                    <button type="button" class="gallery-item" data-caption="A different perspective / 08"><img src="images/photography/photo-2.jpeg" alt="Museum exhibition" loading="lazy"><span>A different perspective <small>08 / 08</small></span></button>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2: SingInk -->
-            <div class="project-card reveal" id="project-singink">
-                <div class="project-header">
-                    <div class="project-meta">
-                        <span class="project-number">04</span>
-                        <span class="project-type">Full-Stack Web Application</span>
-                    </div>
-                    <h3 class="project-title">SingInk — Inventory Management System</h3>
-                    <p class="project-subtitle">IT1x25 Web Development Project</p>
-                </div>
-                <div class="project-description">
-                    <p>Built a full-stack web application to solve a stationery company's inventory challenges. SingInk provides a comprehensive dashboard with stock level monitoring, 3-month demand forecasting, supplier management, transaction tracking, and a customer-facing e-commerce storefront — all in one unified platform.</p>
-                    <div class="project-role">
-                        <h4>My Role &amp; Process</h4>
-                        <p>Working in a team, I contributed to both the frontend UI design and backend development. I implemented the inventory dashboard with real-time stock health indicators, the forecasting algorithm that predicts whether stock will last 3 months, and the supplier management module. The project uses Flask (Python) for the backend with a responsive frontend.</p>
-                    </div>
-                    <div class="project-results">
-                        <h4>Key Features</h4>
-                        <div class="result-tags">
-                            <span>Stock Forecasting</span>
-                            <span>Dashboard Analytics</span>
-                            <span>Supplier Management</span>
-                            <span>Transaction Tracking</span>
-                            <span>E-Commerce Storefront</span>
-                            <span>Account Management</span>
-                            <span>Shopping Cart</span>
-                            <span>Quick Restock Orders</span>
+        <section class="section contact" id="contact">
+            <div class="contact-glow" aria-hidden="true"></div>
+            <div class="container">
+                <p class="section-label reveal"><span>06</span> Get In Touch</p>
+                <div class="contact-heading reveal"><h2>Have a problem<br>worth <em>solving?</em></h2><span class="availability"><i></i> Open to opportunities</span></div>
+                <div class="contact-layout">
+                    <div class="contact-info reveal">
+                        <p>I’m looking for opportunities in cybersecurity, DFIR and AI-driven security. If you’re building something thoughtful, I’d love to hear about it.</p>
+                        <a class="email-link" href="mailto:Caseycapilitangt@gmail.com"><span>Email me</span><strong>Caseycapilitangt@gmail.com</strong><i aria-hidden="true">↗</i></a>
+                        <div class="contact-mini-grid">
+                            <a href="tel:+6580297149"><span>Phone</span><strong>(+65) 8029 7149</strong></a>
+                            <a href="https://github.com/C0mfyyy" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>@C0mfyyy <i aria-hidden="true">↗</i></strong></a>
                         </div>
+                        <button type="button" class="copy-button" id="copyEmail">Copy email address <span aria-hidden="true">⧉</span></button>
                     </div>
-                </div>
-                <div class="project-gallery">
-                    <div class="project-videos">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/efKh3RIxCxw" title="SingInk — Inventory Management System Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: CCA Club Website -->
-            <div class="project-card reveal" id="project-cca">
-                <div class="project-header">
-                    <div class="project-meta">
-                        <span class="project-number">05</span>
-                        <span class="project-type">Web Application — CCA Club Platform</span>
-                    </div>
-                    <h3 class="project-title">CCA Club Website — Concert Booking Platform</h3>
-                    <p class="project-subtitle">School Project</p>
-                </div>
-                <div class="project-description">
-                    <p>Developed a CCA Club website that serves as a central hub for club activities and events. The standout feature is a fully functional concert booking system that allows users to browse upcoming concerts, select seats, and complete their booking — all from within the platform. Upon successful booking, the system automatically generates a confirmation email using a third-party email API service, delivering booking details directly to the user's inbox.</p>
-                    <div class="project-role">
-                        <h4>My Role &amp; Process</h4>
-                        <p>I was responsible for designing the user-facing booking interface and integrating the third-party email service for automated confirmation emails. I built the booking flow from event selection through to payment confirmation, ensuring a smooth user experience. The email generation leverages an external API to create and send formatted confirmation messages with booking details, seat information, and event specifics.</p>
-                    </div>
-                    <div class="project-results">
-                        <h4>Key Features</h4>
-                        <div class="result-tags">
-                            <span>Concert Booking System</span>
-                            <span>Automated Email Confirmation</span>
-                            <span>3rd-Party Email API Integration</span>
-                            <span>Event Browsing &amp; Discovery</span>
-                            <span>Seat Selection</span>
-                            <span>User Authentication</span>
-                            <span>Booking History</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-gallery">
-                    <div class="project-videos">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/DTfNiVIk__U" title="CCA Club — Booking & Email Generation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section experience" id="experience">
-        <div class="container">
-            <div class="section-label">04 — Experience</div>
-            <h2 class="section-title reveal">Work<br><em>Experience</em></h2>
-            <div class="experience-list">
-                <div class="exp-item reveal">
-                    <div class="exp-left">
-                        <span class="exp-period">Apr 2024 — Aug 2024</span>
-                    </div>
-                    <div class="exp-right">
-                        <h3>Social Media Manager</h3>
-                        <span class="exp-company">Fyreflyz</span>
-                        <p>Managed social media accounts across platforms. Created engaging posts, edited promotional videos, wrote captions, and scheduled content to maintain consistent brand presence and audience engagement.</p>
-                    </div>
-                </div>
-                <div class="exp-item reveal">
-                    <div class="exp-left">
-                        <span class="exp-period">Apr 2023 — Present</span>
-                    </div>
-                    <div class="exp-right">
-                        <h3>Student Care Assistant</h3>
-                        <span class="exp-company">Allkin</span>
-                        <p>Supervise and support primary school students with homework and online learning activities. Developed patience, communication skills, and the ability to adapt teaching approaches to different learning needs.</p>
-                    </div>
-                </div>
-                <div class="exp-item reveal">
-                    <div class="exp-left">
-                        <span class="exp-period">Jul 2022 — Nov 2022</span>
-                    </div>
-                    <div class="exp-right">
-                        <h3>Desktop Engineer</h3>
-                        <span class="exp-company">A-Speed Infotech Pte Ltd</span>
-                        <p>Serviced and deployed PCs for SMRT stations, depots, and offices. Led a team during SIM laptop deployments, handled data migration between systems, and provided on-site troubleshooting for hardware and software issues.</p>
-                    </div>
-                </div>
-                <div class="exp-item reveal">
-                    <div class="exp-left">
-                        <span class="exp-period">Nov 2020 — Dec 2020</span>
-                    </div>
-                    <div class="exp-right">
-                        <h3>Parcel Packer</h3>
-                        <span class="exp-company">J&amp;T Express</span>
-                        <p>Processed and packed goods from e-commerce platforms including Shopee and Lazada. Ensured accuracy and efficiency in a high-volume logistics environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photography Gallery -->
-    <section class="section gallery" id="gallery">
-        <div class="container">
-            <div class="section-label">05 — Gallery</div>
-            <h2 class="section-title reveal">Through<br><em>My Lens</em></h2>
-            <p class="gallery-desc reveal">A collection of moments captured during my travels and everyday life.</p>
-        </div>
-        <div class="gallery-grid reveal">
-            <div class="gallery-item">
-                <img src="images/photography/photo-1.jpeg" alt="Chongqing cityscape at night" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-5.jpeg" alt="Geometric light installation" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-4.jpeg" alt="Guitar in sunlight" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-3.jpeg" alt="Singapore Airlines at Changi Airport" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-6.jpeg" alt="Cave and river landscape" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-8.jpeg" alt="River and forest landscape" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-7.jpeg" alt="Street scene at dusk" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/photography/photo-2.jpeg" alt="Museum exhibition" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="lightboxClose">&times;</button>
-        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
-        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
-        <img src="" alt="" class="lightbox-img" id="lightboxImg">
-    </div>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="section-label">06 — Contact</div>
-            <h2 class="section-title reveal">Let's<br><em>Connect</em></h2>
-            <div class="contact-grid reveal">
-                <div class="contact-info">
-                    <p>I'm currently looking for opportunities in cybersecurity, DFIR and AI-driven security, and would love to hear from you.</p>
-                    <div class="contact-details">
-                        <a href="mailto:Caseycapilitangt@gmail.com" class="contact-link">
-                            <span class="contact-link-label">Email</span>
-                            <span class="contact-link-value">Caseycapilitangt@gmail.com</span>
-                        </a>
-                        <a href="tel:+6581213511" class="contact-link">
-                            <span class="contact-link-label">Phone</span>
-                            <span class="contact-link-value">(+65) 8121 3511</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="formName" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="formEmail" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-group"><label for="formName">Your name</label><input type="text" id="formName" name="name" autocomplete="name" placeholder="How should I address you?" required></div>
+                        <div class="form-group"><label for="formEmail">Your email</label><input type="email" id="formEmail" name="email" autocomplete="email" placeholder="you@example.com" required></div>
+                        <div class="form-group"><label for="formMessage">What’s on your mind?</label><textarea id="formMessage" name="message" rows="4" placeholder="Tell me a little about the opportunity or idea..." required></textarea></div>
+                        <button type="submit" class="button button--primary button--full">Open email draft <span aria-hidden="true">↗</span></button>
+                        <p class="form-note">This opens your email app. Your message is not stored on this website.</p>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container footer-inner">
-            <span class="footer-name">Casey Chaw Capilitan</span>
-            <span class="footer-copy">&copy; 2026. All rights reserved.</span>
+            <a href="#hero" class="footer-brand">CC<span>.</span></a>
+            <p>Casey Chaw Capilitan <span>—</span> Security, AI &amp; Design</p>
+            <a href="#hero" class="back-top">Back to top <span aria-hidden="true">↑</span></a>
+            <small>© 2026 Casey Chaw Capilitan</small>
         </div>
     </footer>
 
+    <dialog class="lightbox" id="lightbox" aria-label="Photography viewer">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+        <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">←</button>
+        <figure><img id="lightboxImg" src="" alt=""><figcaption><span id="lightboxCaption"></span><small id="lightboxCount"></small></figcaption></figure>
+        <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Next photo">→</button>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
