@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Hover effect on interactive elements
-        const hoverTargets = document.querySelectorAll('a, button, .gallery-item, .tag');
+        const hoverTargets = document.querySelectorAll('a, button, .gallery-item, .tag, .ai-card');
         hoverTargets.forEach(el => {
             el.addEventListener('mouseenter', () => cursorDot.classList.add('hover'));
             el.addEventListener('mouseleave', () => cursorDot.classList.remove('hover'));
